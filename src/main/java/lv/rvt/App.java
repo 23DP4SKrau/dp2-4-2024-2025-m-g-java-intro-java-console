@@ -8,14 +8,19 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give a number less than 100: ");
-        int userInput = scanner.nextInt();
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        long factorial = 1;
 
-        for (int number = userInput; number <= 100; number ++) {
-            System.out.println(number);
+        if (number < 0) {
+            System.out.println("Factorial is not defined.");
+        } else {
+            for (int i = 1; i <= number; i++) {
+                factorial *= i; 
+            }
+            System.out.println("Factorial is: " + factorial);
         }
 
         scanner.close();
-
    }
 }
