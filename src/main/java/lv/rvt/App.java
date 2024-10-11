@@ -8,7 +8,7 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        System.out.println("Enter a number: ");
+        System.out.println("Give numbers: ");
 
         while (true) {
             int number = scanner.nextInt();
@@ -18,8 +18,8 @@ public class App
             sum += number;
         }
 
-        System.out.println("OK");
-        System.out.println("Sum of the numbers: " + sum);
+        System.out.println("Thx! Bye!");
+        System.out.println("Sum: " + sum);
         scanner.close();
 
    }
